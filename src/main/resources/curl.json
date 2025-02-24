@@ -1,0 +1,5 @@
+curl --location 'http://localhost:8080/consulta-cep/05347020'
+--header 'Content-Type: application/json'
+
+curl --location 'http://localhost:8080/lista-ceps?uf=SP'
+--header 'Content-Type: application/json'

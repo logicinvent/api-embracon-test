@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=embracon'
+      - 'MYSQL_PASSWORD=embracon2319!'
+      - 'MYSQL_ROOT_PASSWORD=embracon2319@'
+      - 'MYSQL_USER=embracon'
+    ports:
+      - '3306'
