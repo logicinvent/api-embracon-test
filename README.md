@@ -64,12 +64,6 @@ After configuring the database, start the application with:
 mvn spring-boot:run
 ```
 
-Or, if using **Gradle**:
-
-```sh
-./gradlew bootRun
-```
-
 ---
 
 ## 📡 2. API Endpoints
