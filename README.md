@@ -72,9 +72,6 @@ After running the application, access the **Swagger UI**:
 🔹 **Swagger UI (Interactive Documentation)**:  
 👉 [`http://localhost:8080/swagger-ui.html`](http://localhost:8080/swagger-ui.html)  
 
-🔹 **OpenAPI JSON Specification**:  
-👉 [`http://localhost:8080/v3/api-docs`](http://localhost:8080/v3/api-docs)  
-
 ---
 
 ## 🔍 3. Querying the API
