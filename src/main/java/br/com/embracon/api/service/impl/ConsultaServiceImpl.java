@@ -16,12 +16,10 @@ import java.util.stream.Collectors;
 @Service
 public class ConsultaServiceImpl implements ConsultaService {
 
-    private final LogService service;
     private final ViaCepIntegrator integrator;
     private final LogService logService;
 
-    public ConsultaServiceImpl(LogService service, ViaCepIntegrator integrator, LogService logService) {
-        this.service = service;
+    public ConsultaServiceImpl(ViaCepIntegrator integrator, LogService logService) {
         this.integrator = integrator;
         this.logService = logService;
     }
@@ -51,7 +49,7 @@ public class ConsultaServiceImpl implements ConsultaService {
 
     @Override
     public List<LogResult> findTop20ByUf(String uf){
-        return service.findTop20ByUf(uf)
+        return logService.findTop20ByUf(uf)
                 .stream().map(
                         log -> new LogResult(log.getCep(), log.getDtHrConsulta().toLocalDate()))
                 .collect(Collectors.toList());
